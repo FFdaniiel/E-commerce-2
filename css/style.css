@@ -288,33 +288,3 @@ input {
 .text-footer{
   color: var(--white);
 }
-
-/* Menu Categoria */
-/* .categoria-nav {
-  background-color: red;
-  position: sticky;
-  float: left;
-  left: 46rem;
-  box-shadow: 0 100vmax 0 100vmax rgb(0 0 0 / 50%);
-  z-index: 1000;
-  padding: .5rem 1rem .5rem 0;
-  border-bottom-left-radius: 1rem ;
-  border-bottom-right-radius: 1rem ;
-}
-
-.categoria-nav-menu {
-  
-  padding: 1rem;
-  width: 100%;
-}
-
-.nav-categoria {
-  color: var(--white);
-  padding: .5rem 0;
-  border-bottom: 1px solid var(--gray);
-  cursor: pointer;
-}
-
-.nav-categoria:hover {
-  color: var(--gray);
-}
