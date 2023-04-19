@@ -20,6 +20,7 @@ ul {
 }
 
 a {
+  border: none;
   text-decoration: none;
 }
 input {
@@ -51,10 +52,11 @@ input {
   gap: 1rem;
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 .nav-logo {
   width: 2.3rem;
+  cursor: pointer;
+
 }
 .nav-name-logo {
   font-size: .75rem;
@@ -134,13 +136,20 @@ input {
 }
 
 .fa-cart-shopping {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: var(--white);
 }
 
 .nav-header-plus-menu p {
+  position: relative;
+  right: 21px;
+  bottom: 13px;
   font-size: 1rem;
-  color: var(--white);
+  font-weight: 600;
+  background: var(--yellow);
+  padding: .17rem .30rem;
+  border-radius: .2rem;
+  color: red;
 }
 
 /* ----------------- slider-item ----------------- */
@@ -246,28 +255,29 @@ input {
 /* ----------------- Promo item ----------------- */
 
 .anuncio-promo {
-  position: relative;
   padding: 1rem 0;
   background: var(--yellow);
   text-align: center;
+  align-items: center;
 }
 .anuncio-promo h3 {
   text-transform: uppercase;
 }
 .items-container {
-  justify-items: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .promo-envio-items {
+  width: 23%;
+  height: 10%;
   border: 1px solid #004e92;
   padding: .5rem 1rem;
   margin-bottom: 1rem;
   border-radius: 1rem;
   transition: 1s;
 ;}
-.promo-envio-items h4 {
+.promo-envio-items h4, .promo-envio-items span  {
   font-weight: 700;
   
 }
@@ -282,40 +292,48 @@ input {
 
 /* ----------------- Productos----------------- */
 main {
+  background: #ececec;
   text-align: center;
-  width: 100%;
 }
 .titulo-principal {
   padding: 2rem;
   position: relative;
+  bottom: 1.5rem;
   color: var(--yellow);
   background: -webkit-linear-gradient(to right, #515896, #004e92);
   background: linear-gradient(to right, #515896, #004e92); 
 }
 .container-productos {
+  align-items: center;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin: 1rem;
 }
 .producto {
-  width: 450px;
-  height: 400px;
+  background: #fff;
+  /* width: 450px;
+  height: 400px; */
+  height: 90%;
   border: 1px solid var(--gray);
   transition: 1s;
-  margin: 1rem 3rem;
+  border-bottom-left-radius:  2rem;
+  border-bottom-right-radius:  2rem;
   overflow: hidden;
 }
 .producto:hover{
   scale: 1.1;
 }
 .producto-img {
-  width: 300px;
+  position: relative;
+  width: 350px;
 }
 .producto-detalles {
   background: #004e92;
   position: relative;
-  padding-bottom: 1rem;
-  padding-top: .75rem;
-  bottom: 4rem;
+  padding-bottom: 2rem;
+  padding-top: .2rem;
+  bottom: 3rem;
 }
 
 .produto-titulo {
@@ -324,18 +342,47 @@ main {
 .producto-precio {
   color: var(--white);
 }
-.producto-agregar {
+.producto-agregar{
   cursor: pointer;
+  width: 70%;
   font-size: .75rem;
   padding: .75rem 1rem;
   border: none;
   background: var(--yellow);
   color: #004e92;
+  border: 2px solid transparent;
+  transition: .45s;
 }
+
+.producto-agregar:hover{
+  border: 2px solid var(--yellow);
+  background: #004e92;
+  color: var(--yellow);
+}
+
+.btn-verTodo {
+  display: inline-block;
+  background: #004e92;
+  border: none;
+  padding: 1rem 3rem;
+  font-size:  1rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  text-align: center;
+  transition: .65s;
+  color: var(--white);
+}
+
+.btn-verTodo:hover{
+  scale: 1.1;
+  color: var(--yellow);
+}
+
 /* ----------------- footer----------------- */
 
 .footer {
   display: flex;
+  margin-top: 2rem;
   align-items: center;
   justify-content: center;
   gap: 2rem;
