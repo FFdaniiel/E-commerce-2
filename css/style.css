@@ -543,10 +543,10 @@ main {
     color: var(--white);
   }
   .nav-menu{
-    position: fixed;
+    position: absolute;
     z-index: 9;
     background: #004e92;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .75);
+    box-shadow: 0 0 0 210vmax rgba(0, 0, 0, .75);
     transform: translateX(550px) translateY(54px);
     opacity: 0;
     visibility: hidden;
