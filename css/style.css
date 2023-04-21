@@ -568,9 +568,11 @@ main {
     flex-direction: column;
     font-size: 1.2rem;
     top: -1.12rem;
-    padding: 2rem;
-    left:  12rem;
+    padding: 1rem;
+    padding-right: 3.7rem;
+    right: -13.4rem;
   }
+
   .fa-xmark {
     position: absolute;
     z-index: 20;
