@@ -27,7 +27,6 @@ input {
   border: 0;
 }
 
-
 .active {
 
 }
@@ -445,6 +444,9 @@ main {
 /*fin tablet*/
 /* phone responsive */
 @media (max-width: 575.98px) {
+  body{
+    width: auto;
+  }
   main {
     padding-bottom: 1rem;
   }
@@ -486,8 +488,11 @@ main {
 
    .slider {
     height: 200px;
-    
     width: 100%;
+  }
+
+  .slider img{
+    height: 200px;
   }
   .navigation-manual {
     margin-top: -326px;
@@ -543,14 +548,13 @@ main {
     color: var(--white);
   }
   .nav-menu{
-    position: absolute;
+    position: fixed;
     z-index: 9;
     box-shadow: 0 0 0 320vmax rgba(0, 0, 0, .75);
     transform: translateX(550px) translateY(54px);
     opacity: 0;
     visibility: hidden;
     transition: .2s;
-
   }
   .nav-menu-visible {
     transform: translateX(180px) translateY(54px);
@@ -565,7 +569,7 @@ main {
     font-size: 1.2rem;
     top: -1.12rem;
     padding: 2rem;
-    left:  .4rem;
+    left:  12rem;
   }
   .fa-xmark {
     position: absolute;
