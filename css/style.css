@@ -27,6 +27,7 @@ input {
   border: 0;
 }
 
+
 .active {
 
 }
@@ -455,7 +456,7 @@ main {
     gap: 1rem;
   }
   .header-nav-search {
-    width: 70%;
+    width: 100%;
   }
   .header-nav-publicidad {
     display: none;
@@ -463,9 +464,19 @@ main {
   .nav-menu {
     display: none;
    }
-   .header-container p{
-    padding: 0 .3rem;
-   }
+   .nav-header-plus-input {
+     font-size: .7rem;
+
+    }
+    .nav-search-imput:placeholder-shown {
+      padding-right: 4.5rem;
+      font-size: .7rem;
+      text-overflow: ellipsis;
+      
+    }
+    .header-container p{
+     padding: 0 .3rem;
+    }
    /* slider */
 
    .slider {
