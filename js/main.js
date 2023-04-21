@@ -1,3 +1,8 @@
+const btnCategorias = document.querySelectorAll('.nav-menu-item');
+const navMenu = document.querySelectorAll('.nav-menu-item');
+console.log(navMenu)
+
+
 // Slider
 const radio = document.querySelector('#radio');
 let contador = 1;
