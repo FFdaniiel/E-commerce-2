@@ -551,7 +551,7 @@ main {
     position: absolute;
     z-index: 9;
     box-shadow: 0 0 0 320vmax rgba(0, 0, 0, .75);
-    transform: translateX(550px) translateY(54px);
+    transform: translateX(180px) translateY(54px);
     opacity: 0;
     visibility: hidden;
     transition: .2s;
