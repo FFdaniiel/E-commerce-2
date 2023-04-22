@@ -549,13 +549,13 @@ main {
   }
   .nav-menu{
     position: absolute;
-    z-index: 9;
+    z-index: 1;
     box-shadow: 0 0 0 320vmax rgba(0, 0, 0, .75);
     transform: translateX(180px) translateY(54px);
     opacity: 0;
     visibility: hidden;
     transition: .2s;
-    right: 18.66rem;
+    right: 17.55rem;
   }
   .nav-menu-visible {
     transform: translateX(180px) translateY(54px);
@@ -567,9 +567,15 @@ main {
     background: #004e92;
     border-bottom-left-radius: 2rem;
     flex-direction: column;
-    font-size: 1.2rem;
-    top: -1.12rem;
+    top: -.95rem;
     padding: 1rem;
+  }
+
+  .nav-menu-list a{
+    gap: .25rem;
+    font-size: .75rem;
+    display: flex;
+
   }
 
   .fa-xmark {
