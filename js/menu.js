@@ -24,6 +24,12 @@ btnCategorias.forEach(boton => boton.addEventListener('click' , () => {
 // Filtro categoria
 // Añadiendo un evento para desplazar el menu de categorias
 
+btncategoria2.forEach(btn =>{
+    btn.addEventListener('click',() =>{
+        quitarNavCategoria ()
+        console.log(btn.innerHTML)
+    })
+})
 filtroOpen.addEventListener('click', () => {
     navCategoria.classList.remove('nav-disable')
     navCategoria.classList.add('nav-enable')
@@ -35,3 +41,11 @@ FiltroClose.addEventListener('click', () => {
     quitarNavCategoria ()
 
 })
+
+function quitarNavCategoria (){
+    // Quitando el navegador por cada vez que se toca la categoria
+    navCategoria.classList.remove('nav-enable')
+    navCategoria.classList.add('nav-disable')
+    FiltroClose.style.display = 'none';
+    filtroOpen.style.display = 'inline';
+}

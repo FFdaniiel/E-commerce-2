@@ -30,6 +30,9 @@ main {
     font-weight: 600;
 
 }
+.filtro-nav-mobile{
+    display: none;
+}
 /* .menu-categoria:after, .menu-categoria:before {
     display:block;
     content: '';
@@ -76,6 +79,7 @@ main {
 
     }
     .menu-categoria {
+        width: 80%;
         font-size: .75rem;
         text-align: center;
     }
@@ -95,6 +99,7 @@ main {
         transition: 1s;
     }
     .filtro-nav-mobile {
+        display: inline;
         background: linear-gradient(to right, #515896, #004e92); 
 
     }
