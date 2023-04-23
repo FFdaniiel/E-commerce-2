@@ -315,28 +315,26 @@ main {
 }
 .producto {
   background: #fff;
-  /* width: 450px;
-  height: 400px; */
-  height: 90%;
+  width: 100%;
   border: 1px solid var(--gray);
   transition: 1s;
   border-bottom-left-radius:  2rem;
   border-bottom-right-radius:  2rem;
   overflow: hidden;
+  object-fit: cover;
 }
 .producto:hover{
-  scale: 1.1;
+  scale: 1.04;
 }
 .producto-img {
   position: relative;
-  width: 350px;
+  width: 450px;
 }
 .producto-detalles {
   background: #004e92;
   position: relative;
-  padding-bottom: 2rem;
-  padding-top: .2rem;
-  bottom: 3rem;
+  padding-bottom: 1rem;
+  padding-top: .75rem;
 }
 
 .produto-titulo {
@@ -518,7 +516,6 @@ main {
   }
   .producto {
     width: 100%;
-    height: 83%;
   }
   .producto-detalles {
     padding: .6rem;
@@ -531,7 +528,6 @@ main {
   }
   .producto-img {
     width: 100%;
-    bottom: 1rem;
   }
   /* Footer */
   .footer {
@@ -550,7 +546,7 @@ main {
   .nav-menu{
     position: absolute;
     z-index: 1;
-    box-shadow: 0 0 0 320vmax rgba(0, 0, 0, .75);
+    box-shadow: 0 0 0 350vmax rgba(0, 0, 0, .75);
     transform: translateX(180px) translateY(54px);
     opacity: 0;
     visibility: hidden;

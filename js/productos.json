@@ -1,0 +1,106 @@
+[
+    {
+        "id": "notebook-01",
+        "titulo": "Notebook Asus I7",
+        "imagen": "./../img/Tecnologia/Computadoras/1.webp",
+        "categoria": {
+            "nombre": "Notebook",
+            "id": "notebook"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "notebook-01",
+        "titulo": "Notebook Asus I7",
+        "imagen": "./../img/Tecnologia/Computadoras/1.webp",
+        "categoria": {
+            "nombre": "Notebook",
+            "id": "notebook"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "notebook-01",
+        "titulo": "Notebook Asus I7",
+        "imagen": "./../img/Tecnologia/Computadoras/1.webp",
+        "categoria": {
+            "nombre": "Notebook",
+            "id": "notebook"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "notebook-01",
+        "titulo": "Notebook Asus I7",
+        "imagen": "./../img/Tecnologia/Computadoras/1.webp",
+        "categoria": {
+            "nombre": "Notebook",
+            "id": "notebook"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "monitores-01",
+        "titulo": "Smart TV LED Android",
+        "imagen": "./../img/Tecnologia/televisores/1.webp",
+        "categoria": {
+            "nombre": "Monitores",
+            "id": "monitores"
+        },
+        "precio": 94.999
+    },
+    {
+        "id": "monitores-01",
+        "titulo": "Smart TV LED Android",
+        "imagen": "./../img/Tecnologia/televisores/1.webp",
+        "categoria": {
+            "nombre": "Monitores",
+            "id": "monitores"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "monitores-01",
+        "titulo": "Smart TV LED Android",
+        "imagen": "./../img/Tecnologia/televisores/1.webp",
+        "categoria": {
+            "nombre": "Monitores",
+            "id": "monitores"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "pcEscritorio-01",
+        "titulo": "Pc Armada Gamer",
+        "imagen": "./../img/Tecnologia/Escritorios/1.webp",
+        "categoria": {
+            "nombre": "PC de Escritorio",
+            "id": "pcEscritorio"
+        },
+        "precio": 309.999
+
+    },
+    {
+        "id": "pcEscritorio-02",
+        "titulo": "Pc Armada Gamer",
+        "imagen": "./../img/Tecnologia/Escritorios/2.webp",
+        "categoria": {
+            "nombre": "PC de Escritorio",
+            "id": "pcEscritorio"
+        },
+        "precio": 309.999
+
+    },
+    {
+        "id": "pcEscritorio-02",
+        "titulo": "Pc Armada Gamer",
+        "imagen": "./../img/Tecnologia/Escritorios/3.webp",
+        "categoria": {
+            "nombre": "PC de Escritorio",
+            "id": "pcEscritorio"
+        },
+        "precio": 309.999
+
+    }
+    
+]
