@@ -546,7 +546,7 @@ main {
   .nav-menu{
     position: absolute;
     z-index: 1;
-    box-shadow: 0 0 0 350vmax rgba(0, 0, 0, .75);
+    box-shadow: 0 0 0 450vmax rgba(0, 0, 0, .75);
     transform: translateX(180px) translateY(54px);
     opacity: 0;
     visibility: hidden;

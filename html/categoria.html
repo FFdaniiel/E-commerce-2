@@ -35,7 +35,7 @@
                         <a href="./../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
                     </li>
                     <li class="nav-menu-item">
-                        <a href="./categoria.html"><i class="fa-solid fa-box"></i> Categoria</a>
+                        <a href="./../html/categoria.html"><i class="fa-solid fa-box"></i> Categoria</a>
                     </li>
                         
                     <li class="nav-menu-item">
@@ -46,14 +46,17 @@
                     </li>
                 </ul>
             </div>
+
             <div class="nav-header-plus-menu">
                 <div class="nav-headerplus-container">
                     <i class="fa-solid fa-cart-shopping fa-xl"></i>
                     <p>0</p>
-
                 </div>
             </div>
-            
+            <div class="nav-menu-tablet">
+                <i class="fa-solid fa-bars" id="open-menu"></i>
+                <i class="fa-solid fa-xmark" id="close-menu"></i>
+            </div>
         </div>
 
     </header>
@@ -108,16 +111,21 @@
 
     <main>
         <h2 id="titulo-principal" class="titulo-principal">Todos los productos</h2>
-        <nav class="nav-categoria">
-            <ul class="menu">
-                <li id="todos" class="menu-categoria active">Ver todo</li>
-                <li id="monitores" class="menu-categoria">Monitores</li>
-                <li id="notebook" class="menu-categoria">Notebook</li>
-                <li id="pcEscritorio" class="menu-categoria">PC/escritorio</li>
-                <li id="componentes" class="menu-categoria">Componentes</li>
-                <li id="perifericos" class="menu-categoria">perifericos</li>
-            </ul>
-        </nav>
+        <div class="filtro-nav-mobile ">
+            <button class="filtro-nav-open filtro">Filtro <i class="fa-solid fa-filter"></i> </button>
+            <button class="filtro-nav-close filtro">Cerrar <i class="fa-regular fa-circle-xmark"></i> </button>
+            
+            <nav class="nav-categoria nav-disable">
+                <ul class="menu">
+                    <li id="todos" class="menu-categoria active">Ver todo</li>
+                    <li id="monitores" class="menu-categoria">Monitores</li>
+                    <li id="notebook" class="menu-categoria">Notebook</li>
+                    <li id="pcEscritorio" class="menu-categoria">PC/escritorio</li>
+                    <li id="componentes" class="menu-categoria">Componentes</li>
+                    <li id="perifericos" class="menu-categoria">perifericos</li>
+                </ul>
+            </nav>
+        </div>
         <div class="container-productos">
         </div>
     </main>
@@ -129,5 +137,6 @@
         <p class="text-footer">&#169; 2023 Daniel S. |  Ecommerce prueba</p>
     </footer>
     <script src="./../js/main.js"></script>
+    <script src="./../js/menu.js"></script>
 </body>
 </html>
