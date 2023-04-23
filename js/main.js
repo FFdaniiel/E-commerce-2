@@ -41,10 +41,8 @@ btncategoria2.forEach(btn => {
             const productosBtn = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
             cargarProductos(productosBtn);
             // Quitando el navegador por cada vez que se toca la categoria
-            quitarNavCategoria()
         } else {
             tituloPrincipal.innerText = 'Todos los productos';
-            quitarNavCategoria()
             cargarProductos(productos);
         }
     })
@@ -73,10 +71,3 @@ function cargarProductos(productosElegidos) {
     })
 }
 
-function quitarNavCategoria (){
-    // Quitando el navegador por cada vez que se toca la categoria
-    navCategoria.classList.remove('nav-enable')
-    navCategoria.classList.add('nav-disable')
-    FiltroClose.style.display = 'none';
-    filtroOpen.style.display = 'inline';
-}
