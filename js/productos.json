@@ -2,7 +2,7 @@
     {
         "id": "notebook-01",
         "titulo": "Notebook Asus I7",
-        "imagen": "./../img/Tecnologia/Computadoras/1.webp",
+        "imagen": "./img/Tecnologia/Computadoras/1.webp",
         "destacado": "si",
         "oferta": "si",
         "categoria": {
@@ -15,7 +15,7 @@
     {
         "id": "notebook-01",
         "titulo": "Notebook Asus I7",
-        "imagen": "./../img/Tecnologia/Computadoras/1.webp",
+        "imagen": "./img/Tecnologia/Computadoras/1.webp",
         "destacado": "no",
         "oferta": "no",
         "categoria": {
@@ -27,7 +27,7 @@
     {
         "id": "notebook-01",
         "titulo": "Notebook Asus I7",
-        "imagen": "./../img/Tecnologia/Computadoras/1.webp",
+        "imagen": "./img/Tecnologia/Computadoras/1.webp",
         "destacado": "no",
         "oferta": "si",
         "categoria": {
@@ -40,7 +40,7 @@
     {
         "id": "notebook-01",
         "titulo": "Notebook Asus I7",
-        "imagen": "./../img/Tecnologia/Computadoras/1.webp",
+        "imagen": "./img/Tecnologia/Computadoras/1.webp",
         "destacado": "no",
         "oferta": "no",
         "categoria": {
@@ -52,7 +52,7 @@
     {
         "id": "monitores-01",
         "titulo": "Smart TV LED Android",
-        "imagen": "./../img/Tecnologia/televisores/1.webp",
+        "imagen": "./img/Tecnologia/televisores/1.webp",
         "destacado": "si",
         "oferta": "si",
         "categoria": {
@@ -65,7 +65,7 @@
     {
         "id": "monitores-01",
         "titulo": "Smart TV LED Android",
-        "imagen": "./../img/Tecnologia/televisores/1.webp",
+        "imagen": "./img/Tecnologia/televisores/1.webp",
         "destacado": "no",
         "categoria": {
             "nombre": "Monitores",
@@ -76,7 +76,7 @@
     {
         "id": "monitores-01",
         "titulo": "Smart TV LED Android",
-        "imagen": "./../img/Tecnologia/televisores/1.webp",
+        "imagen": "./img/Tecnologia/televisores/1.webp",
         "destacado": "no",
         "oferta": "si",
         "categoria": {
@@ -89,7 +89,7 @@
     {
         "id": "pcEscritorio-01",
         "titulo": "Pc Armada Gamer",
-        "imagen": "./../img/Tecnologia/Escritorios/1.webp",
+        "imagen": "./img/Tecnologia/Escritorios/1.webp",
         "destacado": "no",
         "oferta": "no",
         "categoria": {
@@ -102,7 +102,7 @@
     {
         "id": "pcEscritorio-02",
         "titulo": "Pc Armada Gamer",
-        "imagen": "./../img/Tecnologia/Escritorios/2.webp",
+        "imagen": "./img/Tecnologia/Escritorios/2.webp",
         "destacado": "no",
         "oferta": "no",
         "categoria": {
@@ -115,7 +115,7 @@
     {
         "id": "pcEscritorio-02",
         "titulo": "Pc Armada Gamer",
-        "imagen": "./../img/Tecnologia/Escritorios/3.webp",
+        "imagen": "./img/Tecnologia/Escritorios/3.webp",
         "destacado": "si",
         "oferta": "si",
         "categoria": {
