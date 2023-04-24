@@ -1,5 +1,4 @@
 
-const btncategoria2 = document.querySelectorAll('.menu-categoria');
 
 // Categoria
 

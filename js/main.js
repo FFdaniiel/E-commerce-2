@@ -1,6 +1,6 @@
 let productos = []
 
-fetch('./js/productos.json')
+fetch('./../js/productos.json')
     .then(response => response.json())
     .then(data => {
         productos = data;
@@ -9,9 +9,11 @@ fetch('./js/productos.json')
 
 const btnCategorias = document.querySelectorAll('.nav-menu-item');
 const navMenu = document.querySelectorAll('.nav-menu-item');
+
+const btncategoria2 = document.querySelectorAll('.menu-categoria');
 const contenedorProductos = document.querySelector('.container-productos');
-const contenedorProductosDestacados = document.querySelector('#destacado');
 const tituloPrincipal = document.querySelector('#titulo-principal');
+const contenedorProductosDestacados = document.querySelector('#destacado');
 
 
 
