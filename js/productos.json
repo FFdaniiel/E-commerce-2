@@ -3,36 +3,46 @@
         "id": "notebook-01",
         "titulo": "Notebook Asus I7",
         "imagen": "./../img/Tecnologia/Computadoras/1.webp",
+        "destacado": "si",
+        "oferta": "si",
         "categoria": {
             "nombre": "Notebook",
             "id": "notebook"
         },
-        "precio": 1000
+        "descuento": 25,
+        "precio": 45000
     },
     {
         "id": "notebook-01",
         "titulo": "Notebook Asus I7",
         "imagen": "./../img/Tecnologia/Computadoras/1.webp",
+        "destacado": "no",
+        "oferta": "no",
         "categoria": {
             "nombre": "Notebook",
             "id": "notebook"
         },
-        "precio": 1000
+        "precio": 1.999
     },
     {
         "id": "notebook-01",
         "titulo": "Notebook Asus I7",
         "imagen": "./../img/Tecnologia/Computadoras/1.webp",
+        "destacado": "no",
+        "oferta": "si",
         "categoria": {
             "nombre": "Notebook",
             "id": "notebook"
         },
-        "precio": 1000
+        "descuento": 35,
+        "precio": 27.999
     },
     {
         "id": "notebook-01",
         "titulo": "Notebook Asus I7",
         "imagen": "./../img/Tecnologia/Computadoras/1.webp",
+        "destacado": "no",
+        "oferta": "no",
         "categoria": {
             "nombre": "Notebook",
             "id": "notebook"
@@ -43,16 +53,20 @@
         "id": "monitores-01",
         "titulo": "Smart TV LED Android",
         "imagen": "./../img/Tecnologia/televisores/1.webp",
+        "destacado": "si",
+        "oferta": "si",
         "categoria": {
             "nombre": "Monitores",
             "id": "monitores"
         },
+        "descuento": 7,
         "precio": 94.999
     },
     {
         "id": "monitores-01",
         "titulo": "Smart TV LED Android",
         "imagen": "./../img/Tecnologia/televisores/1.webp",
+        "destacado": "no",
         "categoria": {
             "nombre": "Monitores",
             "id": "monitores"
@@ -63,16 +77,21 @@
         "id": "monitores-01",
         "titulo": "Smart TV LED Android",
         "imagen": "./../img/Tecnologia/televisores/1.webp",
+        "destacado": "no",
+        "oferta": "si",
         "categoria": {
             "nombre": "Monitores",
             "id": "monitores"
         },
+        "descuento": 25,
         "precio": 1000
     },
     {
         "id": "pcEscritorio-01",
         "titulo": "Pc Armada Gamer",
         "imagen": "./../img/Tecnologia/Escritorios/1.webp",
+        "destacado": "no",
+        "oferta": "no",
         "categoria": {
             "nombre": "PC de Escritorio",
             "id": "pcEscritorio"
@@ -84,6 +103,8 @@
         "id": "pcEscritorio-02",
         "titulo": "Pc Armada Gamer",
         "imagen": "./../img/Tecnologia/Escritorios/2.webp",
+        "destacado": "no",
+        "oferta": "no",
         "categoria": {
             "nombre": "PC de Escritorio",
             "id": "pcEscritorio"
@@ -95,10 +116,13 @@
         "id": "pcEscritorio-02",
         "titulo": "Pc Armada Gamer",
         "imagen": "./../img/Tecnologia/Escritorios/3.webp",
+        "destacado": "si",
+        "oferta": "si",
         "categoria": {
             "nombre": "PC de Escritorio",
             "id": "pcEscritorio"
         },
+        "descuento": 15,
         "precio": 309.999
 
     }

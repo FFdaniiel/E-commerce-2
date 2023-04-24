@@ -9,9 +9,10 @@ fetch('./../js/productos.json')
 
 const btnCategorias = document.querySelectorAll('.nav-menu-item');
 const navMenu = document.querySelectorAll('.nav-menu-item');
-const btncategoria2 = document.querySelectorAll('.menu-categoria')
-const contenedorProductos = document.querySelector('.container-productos')
-const tituloPrincipal = document.querySelector('#titulo-principal')
+const btncategoria2 = document.querySelectorAll('.menu-categoria');
+const contenedorProductos = document.querySelector('.container-productos');
+const contenedorProductosDestacados = document.querySelector('#destacado');
+const tituloPrincipal = document.querySelector('#titulo-principal');
 
 
 
@@ -26,48 +27,34 @@ setInterval(function() {
     }
 }, 6000);
 
+// 
 
-// Categoria
-
-btncategoria2.forEach(btn => {
-    btn.addEventListener('click', (e) =>{
-        btncategoria2.forEach(btn => btn.classList.remove('active'));
-        e.currentTarget.classList.add('active');
-
-        if(e.currentTarget.id != 'todos'){
-            const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id)
-            tituloPrincipal.innerText = productoCategoria.categoria.nombre;
-    
-            const productosBtn = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
-            cargarProductos(productosBtn);
-            // Quitando el navegador por cada vez que se toca la categoria
-        } else {
-            tituloPrincipal.innerText = 'Todos los productos';
-            cargarProductos(productos);
-        }
-    })
-
-})
-
+// Agrega los productos destacados
 function cargarProductos(productosElegidos) {
 
-    contenedorProductos.innerHTML = "";
-
+    contenedorProductosDestacados.innerHTML = "";
     productosElegidos.forEach(producto =>  {
+        if(producto.destacado == 'si'){
+            let descuento = producto.descuento
+            let precio = producto.precio
+            let calculo = (descuento / 100) * precio
+            let total = Number(precio - calculo)
+            let fixeado = Number(total.toFixed(3));
 
-        const div = document.createElement('div');
-        div.classList.add('producto');
-        div.innerHTML = `
-        <div class="producto">
-            <img class="producto-img" clas src="${producto.imagen}" alt="${producto.titulo}">
-            <div class="producto-detalles">
-                <h3 class="produto-titulo">${producto.titulo}</h3>
-                <p class="producto-precio">$ ${producto.precio}</p>
-                <button class="producto-agregar" id="${producto.id}">Agregar</button>
-            </div>
-        </div>
-        `
-        contenedorProductos.append(div);
-    })
+            const div = document.createElement('div');
+            div.classList.add('producto');
+            div.innerHTML = `
+                <img class="producto-img" clas src="${producto.imagen}" alt="${producto.titulo}">
+                <div class="producto-detalles">
+                    <h3 class="produto-titulo">${producto.titulo}</h3>
+                    <p class="producto-precio subrayado">$ ${precio}</p>
+                    <p class="producto-precio">$ ${(fixeado)} <span class="descuento">%${producto.descuento}</span></p>
+                    <button class="producto-agregar" id="${producto.id}">Agregar</button>
+                </div>
+            `
+            contenedorProductos.append(div);
+        }
+        })
 }
+cargarProductosDestacados()
 

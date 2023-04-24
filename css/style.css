@@ -6,6 +6,7 @@
     --yellow: #f3e334;
     --white: #ececec;
     --gray:  #c2c2c2;
+    --green: #00a650;
     /* Tipo */
     --rubik: 'Rubik', sans-serif;
 }
@@ -379,6 +380,17 @@ main {
   color: var(--yellow);
 }
 
+.subrayado {
+  text-decoration:line-through;
+
+}
+.descuento{
+  color: var(--green);
+  position: absolute;
+  right: 10rem;
+  font-weight: 700;
+}
+
 /* ----------------- footer----------------- */
 
 .footer {
@@ -436,6 +448,9 @@ main {
   }
   .producto-img {
     width: 300px;
+  }
+  .descuento{
+    right: 20%;
   }
 }
 
@@ -529,6 +544,10 @@ main {
   .producto-img {
     width: 100%;
   }
+  .descuento{
+    right: 5%;
+  }
+  
   /* Footer */
   .footer {
     margin: 0;
