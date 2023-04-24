@@ -56,5 +56,5 @@ function cargarProductos(productosElegidos) {
         }
         })
 }
-cargarProductosDestacados()
+cargarProductos()
 
