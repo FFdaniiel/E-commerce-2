@@ -121,7 +121,7 @@ let productosEnCarritoLS = localStorage.getItem('productos-en-carrito');
 if (productosEnCarritoLS) {
     productosEnCarrito = JSON.parse(productosEnCarritoLS);
     actualizarNumero();
-    
+
 }else{
     productosEnCarrito = [];
 };

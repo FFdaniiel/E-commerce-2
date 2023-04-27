@@ -1,5 +1,6 @@
 const btncategoria2 = document.querySelectorAll('.menu-categoria');
 const contenedorProductos = document.querySelector('.container-productos');
+const contenedorOfertas = document.querySelector('#oferta');
 
 // Categoria
 
@@ -32,7 +33,8 @@ function cargarProductos(productosElegidos) {
         let calculo = (descuento / 100) * precio
         let total = Number(precio - calculo)
         let fixeado = Number(total.toFixed(3));
-        if(producto.destacado == 'si'){
+
+        if(producto.destacado == 'si' ){
             const div = document.createElement('div');
             div.classList.add('producto');
             div.innerHTML = `
@@ -45,6 +47,7 @@ function cargarProductos(productosElegidos) {
                 </div>
             `
             contenedorProductos.append(div);
+
         }else{
             const div = document.createElement('div');
             div.classList.add('producto');
@@ -59,6 +62,7 @@ function cargarProductos(productosElegidos) {
             contenedorProductos.append(div);
         }
     })
+    actualizarBtnAgregar()
 }
 
 // Filtro categoria
@@ -90,10 +94,47 @@ function filtroCategoria (){
     }
 }
 
-if (filtroOpen.style.display === "") {
-    filtroCategoria ()
+// if (filtroOpen.style.display === "") {
+//     filtroCategoria ()
     
-}else {
+// }else {
+
+// }
+
+
+// Oferta
+// Productos destacados
+if(contenedorOfertas){
+    // Agrega los productos destacados
+    function cargarProductos(productosElegidos) {
+    
+        contenedorOfertas.innerHTML = "";
+        productosElegidos.forEach(producto =>  {
+            if(producto.oferta == 'si'){
+                let descuento = producto.descuento
+                let precio = producto.precio
+                let calculo = (descuento / 100) * precio
+                let total = Number(precio - calculo)
+                let fixeado = Number(total.toFixed(3));
+    
+                const div = document.createElement('div');
+                div.classList.add('producto');
+                div.innerHTML = `
+                    <img class="producto-img" clas src="${producto.imagen}" alt="${producto.titulo}">
+                    <div class="producto-detalles">
+                        <h3 class="produto-titulo">${producto.titulo}</h3>
+                        <p class="producto-precio subrayado">$ ${precio}</p>
+                        <p class="producto-precio">$ ${(fixeado)} <span class="descuento">%${producto.descuento}</span></p>
+                        <button class="producto-agregar" id="${producto.id}">Agregar</button>
+                    </div>
+                `
+                contenedorOfertas.append(div);
+            }
+        })
+        actualizarBtnAgregar()
+    }
+
+}else{
 
 }
 
