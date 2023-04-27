@@ -1,4 +1,5 @@
-
+const btncategoria2 = document.querySelectorAll('.menu-categoria');
+const contenedorProductos = document.querySelector('.container-productos');
 
 // Categoria
 

@@ -1,3 +1,5 @@
+const btnCategorias = document.querySelectorAll('.nav-menu-item');
+
 const openMenu = document.querySelector('#open-menu');
 const closeMenu = document.querySelector('#close-menu');
 const menu = document.querySelector('.nav-menu');
@@ -5,7 +7,6 @@ const menu = document.querySelector('.nav-menu');
 const navCategoria = document.querySelector('.nav-categoria');
 const filtroOpen = document.querySelector('.filtro-nav-open');
 const FiltroClose = document.querySelector('.filtro-nav-close');
-const btnFiltro = document.querySelectorAll('.menu-categoria');
 
 openMenu.addEventListener('click' , () => {
     closeMenu.style.display = 'inline';
