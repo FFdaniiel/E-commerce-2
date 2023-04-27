@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Virtual</title>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="./index.html">
+                    <img class="nav-logo" src="./img/logo.png" alt="Logo">
+                </a>
+                    <h4 class="nav-name-logo">Mercado Virtual</h4>
+            </div>
+            <div class="header-nav-search">
+                <input type="text" class="nav-search-imput" placeholder="Buscar productos, marcas y más...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="header-nav-publicidad">
+                <p>Por <span>$1.200</span> ¡Suscribite! </p>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-menu-list">
+                    <li class="nav-menu-item">
+                        <a href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="./categoria.html"><i class="fa-solid fa-box"></i> Categoria</a>
+                    </li>
+                        
+                    <li class="nav-menu-item">
+                            <a href="./ofertas.html"><i class="fa-solid fa-tag"></i> Ofertas</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href= "./ayuda.html"><i class="fa-solid fa-circle-info"></i> Ayuda</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-header-plus-menu">
+                <div class="nav-headerplus-container">
+                    <a href="./carrito.html"><i class="fa-solid fa-cart-shopping fa-xl btn-carrito"><span id="numero" class="cantidad">0</span></i></a>
+
+                </div>
+            </div>
+            <div class="nav-menu-tablet">
+                <i class="fa-solid fa-bars" id="open-menu"></i>
+                <i class="fa-solid fa-xmark" id="close-menu"></i>
+            </div>
+        </div>
+
+    </header>
+
+        <!-- -- Image slider start 
+        <div class="slider">
+            <div class="sliders">
+                -- Radio buttons start 
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                -- Radio buttons end 
+                -- Slider images start 
+                <div class="slide item1">
+                    <img src="./img/Banner/Banner1.jpg" alt="banner1">
+                </div>
+                <div class="slide item2">
+                    <img src="./img/Banner/banner2.jpg" alt="banner2">
+                </div>
+                <div class="slide item3">
+                    <img src="./img/Banner/banner3.jpg" alt="banner3">
+                </div>
+                -- Slider images end 
+                -- Automatic navigation start 
+                <div class="navigation-auto">
+                    <div class="auto-1"></div>
+                    <div class="auto-2"></div>
+                    <div class="auto-3"></div>
+                </div>
+                -- Automatic navigation end 
+            </div>
+            -- Manual navigation start 
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+            -- Manual navigation end 
+        </div>
+        -- Image slider end  -->
+
+    <main>
+        <h2 class="titulo-principal-ayuda">¡Bienvenido/a a nuestra sección de ayuda!</h2>
+        <div class="preguntas-soluciones">
+            <p>
+            Si estás teniendo problemas para utilizar nuestro sitio web, ¡no te preocupes! Aquí encontrarás respuestas a las preguntas más frecuentes y soluciones a los problemas más comunes.<br><br>
+            ¿No encuentras lo que estás buscando? No dudes en ponerte en contacto con nuestro equipo de soporte. Estaremos encantados de ayudarte en lo que necesites.<br>
+            Gracias por elegir nuestro sitio web. ¡Esperamos que tengas una excelente experiencia de usuario!</p>
+            <p>¿Cuál es nuestra política de devoluciones?<br>
+                <span class="respuesta">Si no estás satisfecho con tu compra, puedes devolver el producto en un plazo de 30 días a partir de la fecha de compra para obtener un reembolso completo.</span> 
+            </p>
+            <p> ¿Cómo puedo contactar a su equipo de soporte?<br>
+                <span class="respuesta">Puedes contactar a nuestro equipo de soporte a través del formulario de contacto en nuestro sitio web, enviando un correo electrónico a <span>Correo@correo.com</span> o llamando a nuestro número de atención al cliente indicado en la página de contacto.</span> 
+            </p>
+        </div>
+        <div class="formulario">
+            <form >
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+                <input type="submit" value="Enviar">
+              </form>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <ul class="icons-footer">
+            <li icon-footer><i class="fa-brands fa-linkedin"></i></li>
+            <li icon-footer><i class="fa-brands fa-github"></i></li>
+        </ul>
+        <p class="text-footer">&#169; 2023 Daniel S. |  Ecommerce prueba</p>
+    </footer>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
