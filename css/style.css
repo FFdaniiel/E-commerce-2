@@ -122,6 +122,16 @@ input {
   color:  var(--gray);
   cursor: pointer;
 }
+.cantidad {
+  color: red;
+  position: relative;
+  top: -1rem;
+  right: .55rem;
+  font-size: 1rem;
+  background: var(--yellow);
+  padding: .1rem .25rem;
+  border-radius: .25rem;
+}
 .nav-menu-tablet {
   display: none;
 }
@@ -416,9 +426,10 @@ main {
 /* Responsive tablet */
 
 /*Tablet*/
-
-/*Portrait*/
 @media (max-width: 991.98px) {
+  .header-logo {
+    gap: 0;
+  }
   .slider-container {
 
   }
@@ -455,16 +466,14 @@ main {
 }
 
 /*fin tablet*/
+
 /* phone responsive */
 @media (max-width: 575.98px) {
   body{
     width: auto;
   }
-  main {
-    padding-bottom: 1rem;
-  }
-
   .header-container {
+    padding-bottom: .75rem;
 
   }
   .nav-name-logo {
@@ -473,10 +482,14 @@ main {
   .header-container {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
   }
-  .header-nav-search {
-    width: 100%;
+  .fa-magnifying-glass {
+    padding: 0;
+
+  }
+  .nav-search-imput{
+    padding-right: 3.5rem;
+    
   }
   .header-nav-publicidad {
     display: none;
@@ -486,10 +499,12 @@ main {
    } */
    .nav-header-plus-input {
      font-size: .7rem;
-
+    }
+    .fa-cart-shopping {
+      font-size: 1rem;
     }
     .nav-search-imput:placeholder-shown {
-      padding-right: 4.5rem;
+      padding-right: 5.5rem;
       font-size: .7rem;
       text-overflow: ellipsis;
       
@@ -557,9 +572,9 @@ main {
     display: flex;
     align-items: center;
   }
+ 
   .fa-bars {
-    font-size: 1.6rem;
-    padding-right: 1rem;
+    font-size: 1.2rem;
     color: var(--white);
   }
   .nav-menu{
@@ -570,7 +585,8 @@ main {
     opacity: 0;
     visibility: hidden;
     transition: .2s;
-    right: 17.55rem;
+    right: 21.65rem;
+    top: .7rem;
   }
   .nav-menu-visible {
     transform: translateX(180px) translateY(54px);
@@ -585,12 +601,23 @@ main {
     top: -.95rem;
     padding: 1rem;
   }
-
-  .nav-menu-list a{
-    gap: .25rem;
-    font-size: .75rem;
+  .nav-menu-item {
+    padding: 1rem;
+  }
+  .nav-menu-item a{
     display: flex;
+    gap: 1rem;
+  }
 
+  .cantidad {
+    color: red;
+    position: relative;
+    top: -.5rem;
+    right: .35rem;
+    font-size: .75rem;
+    background: var(--yellow);
+    padding: .1rem .25rem;
+    border-radius: .25rem;
   }
 
   .fa-xmark {
