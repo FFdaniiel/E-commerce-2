@@ -15,20 +15,66 @@ const contenedorProductos = document.querySelector('.container-productos');
 const tituloPrincipal = document.querySelector('#titulo-principal');
 const contenedorProductosDestacados = document.querySelector('#destacado');
 
-
+const sliderContainer = document.querySelector('.slider-container');
 
 // Slider
 const radio = document.querySelector('#radio');
-let contador = 1;
-setInterval(function() {
-    document.querySelector('#radio' + contador).checked = true;
-    contador++
-    if(contador > 3){
-        contador = 1;
-    }
-}, 6000);
 
-// 
+if(sliderContainer){
+    sliderContainer.innerHTML = ''
+    const slider = document.createElement('div');
+    slider.classList.add('slider');
+    const sliders = document.createElement('div');
+    sliders.classList.add('sliders');
+    sliders.innerHTML = `
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <!-- Radio buttons end -->
+        <!-- Slider images start -->
+        <div class="slide item1">
+            <img src="./img/Banner/Banner1.jpg" alt="banner1">
+        </div>
+        <div class="slide item2">
+            <img src="./img/Banner/banner2.jpg" alt="banner2">
+        </div>
+        <div class="slide item3">
+            <img src="./img/Banner/banner3.jpg" alt="banner3">
+        </div>
+        <!-- Slider images end -->
+        <!-- Automatic navigation start -->
+        <div class="navigation-auto">
+            <div class="auto-1"></div>
+            <div class="auto-2"></div>
+            <div class="auto-3"></div>
+        </div>
+    `
+    const navigationManual = document.createElement('div');
+    navigationManual.classList.add('navigation-manual');
+    navigationManual.innerHTML = `
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+    `
+
+    slider.appendChild(sliders)
+    slider.appendChild(navigationManual)
+    sliderContainer.appendChild(slider)
+
+    // Slider
+    let contador = 1;
+    setInterval(function() {
+        document.querySelector('#radio' + contador).checked = true;
+        contador++
+        if(contador > 3){
+            contador = 1;
+        }
+    }, 6000);
+    
+}else {
+
+}
+
 
 // Agrega los productos destacados
 function cargarProductos(productosElegidos) {
