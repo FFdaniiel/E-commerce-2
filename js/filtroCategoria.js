@@ -94,14 +94,6 @@ function filtroCategoria (){
     }
 }
 
-// if (filtroOpen.style.display === "") {
-//     filtroCategoria ()
-    
-// }else {
-
-// }
-
-
 // Oferta
 // Productos destacados
 if(contenedorOfertas){
@@ -137,4 +129,15 @@ if(contenedorOfertas){
 }else{
 
 }
+
+if (filtroOpen) {
+    filtroCategoria ()
+
+    
+}else {
+
+}
+
+
+
 
