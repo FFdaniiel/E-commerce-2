@@ -129,11 +129,9 @@ if(contenedorOfertas){
 }else{
 
 }
-
 if (filtroOpen) {
     filtroCategoria ()
 
-    
 }else {
 
 }

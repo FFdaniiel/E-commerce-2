@@ -124,3 +124,9 @@ main {
     }
 
 }
+
+@media (max-width: 575.98px){
+    .nav-disable {
+        display: none;
+      }
+}
