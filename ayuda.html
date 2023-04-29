@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/ayuda.css">
 
 </head>
 <body>
@@ -98,31 +99,47 @@
     <main>
         <h2 class="titulo-principal-ayuda">¡Bienvenido/a a nuestra sección de ayuda!</h2>
         <div class="preguntas-soluciones">
-            <p>
-            Si estás teniendo problemas para utilizar nuestro sitio web, ¡no te preocupes! Aquí encontrarás respuestas a las preguntas más frecuentes y soluciones a los problemas más comunes.<br><br>
-            ¿No encuentras lo que estás buscando? No dudes en ponerte en contacto con nuestro equipo de soporte. Estaremos encantados de ayudarte en lo que necesites.<br>
-            Gracias por elegir nuestro sitio web. ¡Esperamos que tengas una excelente experiencia de usuario!</p>
-            <p>¿Cuál es nuestra política de devoluciones?<br>
-                <span class="respuesta">Si no estás satisfecho con tu compra, puedes devolver el producto en un plazo de 30 días a partir de la fecha de compra para obtener un reembolso completo.</span> 
+            <p class="txt1">
+                <span>¿No encuentras lo que estás buscando?</span><br> No dudes en ponerte en contacto con nuestro equipo de soporte. Estaremos encantados de ayudarte en lo que necesites.<br>
+                Gracias por elegir nuestro sitio web. ¡Esperamos que tengas una excelente experiencia de usuario!<br><br>
+                Si estás teniendo problemas para utilizar nuestro sitio web, ¡no te preocupes! Aquí encontrarás respuestas a las preguntas más frecuentes y soluciones a los problemas más comunes.
             </p>
-            <p> ¿Cómo puedo contactar a su equipo de soporte?<br>
-                <span class="respuesta">Puedes contactar a nuestro equipo de soporte a través del formulario de contacto en nuestro sitio web, enviando un correo electrónico a <span>Correo@correo.com</span> o llamando a nuestro número de atención al cliente indicado en la página de contacto.</span> 
-            </p>
-        </div>
-        <div class="formulario">
-            <h3>Contactanos!</h3>
-            <form >
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
-                <input type="submit" value="Enviar">
-              </form>
-        </div>
+            <div class="container-respuestas">
+                <div class="preguntas-respuestas">
+                    <p class="txt2">¿Cuál es nuestra política de devoluciones?<br></p>
+                        <span class="respuesta">Si no estás satisfecho con tu compra, puedes devolver el producto en un plazo de 30 días a partir de la fecha de compra para obtener un reembolso completo.</span> 
+                </div>
+                <div class="preguntas-respuestas">
+                    <p class="txt2"> ¿Cómo puedo contactar a su equipo de soporte?<br></p>
+                        <span class="respuesta">Puedes contactar a nuestro equipo de soporte a través del formulario de contacto en nuestro sitio web, enviando un correo electrónico a <span>Correo@correo.com</span> o llamando a nuestro número de atención al cliente indicado en la página de contacto.</span> 
+                </div>
 
+            </div>
+        </div>
+        <section class="formcontato" id="contacto">
+                <div class="formcontato__text">
+                    <h2 class="formcontato__title">Contacto</h2>
+                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
+                    <form class="formcontato__form" name="form" >
+                        <div class="input-container">
+                            <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre" pattern="[\s\S]{5,30}" required data-tipo="nombre">
+                        </div>
+                        <div class="input-container">
+                            <input class="formcontato__input" type="email" name="email" placeholder="E-mail" required data-tipo="email">         
+                        </div>
+                        <div class="input-container">
+                            <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto" pattern="[\s\S]{5,30}" required data-tipo="asunto">
+                        </div>
+                        <div class="input-container">
+                            <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje" pattern="[\s\S]{4,30}" required ></textarea>
+                        </div>
+                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+    </section>
     <footer class="footer">
         <ul class="icons-footer">
             <li icon-footer><i class="fa-brands fa-linkedin"></i></li>
