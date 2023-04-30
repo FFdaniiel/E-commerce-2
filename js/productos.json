@@ -13,7 +13,7 @@
         "precio": 45000
     },
     {
-        "id": "notebook-01",
+        "id": "notebook-02",
         "titulo": "Notebook Asus I7",
         "imagen": "./img/Tecnologia/Computadoras/1.webp",
         "destacado": "no",
@@ -22,10 +22,10 @@
             "nombre": "Notebook",
             "id": "notebook"
         },
-        "precio": 1.999
+        "precio": 1999
     },
     {
-        "id": "notebook-01",
+        "id": "notebook-03",
         "titulo": "Notebook Asus I7",
         "imagen": "./img/Tecnologia/Computadoras/1.webp",
         "destacado": "no",
@@ -35,10 +35,10 @@
             "id": "notebook"
         },
         "descuento": 35,
-        "precio": 27.999
+        "precio": 27999
     },
     {
-        "id": "notebook-01",
+        "id": "notebook-04",
         "titulo": "Notebook Asus I7",
         "imagen": "./img/Tecnologia/Computadoras/1.webp",
         "destacado": "no",
@@ -60,10 +60,10 @@
             "id": "monitores"
         },
         "descuento": 7,
-        "precio": 94.999
+        "precio": 94999
     },
     {
-        "id": "monitores-01",
+        "id": "monitores-02",
         "titulo": "Smart TV LED Android",
         "imagen": "./img/Tecnologia/televisores/1.webp",
         "destacado": "no",
@@ -74,7 +74,7 @@
         "precio": 1000
     },
     {
-        "id": "monitores-01",
+        "id": "monitores-03",
         "titulo": "Smart TV LED Android",
         "imagen": "./img/Tecnologia/televisores/1.webp",
         "destacado": "no",
@@ -96,7 +96,7 @@
             "nombre": "PC de Escritorio",
             "id": "pcEscritorio"
         },
-        "precio": 309.999
+        "precio": 309999
 
     },
     {
@@ -109,11 +109,11 @@
             "nombre": "PC de Escritorio",
             "id": "pcEscritorio"
         },
-        "precio": 309.999
+        "precio": 309999
 
     },
     {
-        "id": "pcEscritorio-02",
+        "id": "pcEscritorio-03",
         "titulo": "Pc Armada Gamer",
         "imagen": "./img/Tecnologia/Escritorios/3.webp",
         "destacado": "si",
@@ -123,7 +123,7 @@
             "id": "pcEscritorio"
         },
         "descuento": 15,
-        "precio": 309.999
+        "precio": 309999
 
     }
     

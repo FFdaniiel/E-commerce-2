@@ -31,7 +31,7 @@ input {
 .active {
 
 }
-.disable {
+.disabled {
   display: none;
 }
 
@@ -628,4 +628,27 @@ main {
     font-size: 2rem;
     display: none;
   }
+}
+
+/* Carrito */
+.carrito-productos{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  gap: 1rem;
+
+}
+.carrito-producto{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--yellow);
+  color: #004e92;
+  padding: 0.5rem;
+  padding-right: 1.5rem;
+  border-radius: 1rem;
+
+}
+.carrito-producto-imagen{
+  width: 5rem;
 }

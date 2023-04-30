@@ -1,4 +1,5 @@
 main {
+    background-color: #E7E7E7;
     padding-top: 1rem;
 }
 .titulo-principal-ayuda {
@@ -28,51 +29,46 @@ main {
     border: 1px solid var(--gray);
 }
 .preguntas-respuestas:hover {
-    color: var(--white);;
+    color: var(--white);
     background: linear-gradient(to right, #515896, #004e92);
 }
 .txt2{
     font-weight: 500;
 }
 
+/* Formulario */
 .formcontato{
-    margin: 0 5rem;
-    background: var(--yellow);
-    border-radius: 2rem;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
 }
-.input-container {
-    padding-bottom: .75rem;
+form input, form textarea{
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; 
+    border: none; 
+    color: #525c66; 
+    border-bottom: 2px solid #004e92;
+    font-size: 1em;
+    resize: none; 
+  }
+  
+  form button {
+    display: block;
+    background-color: #0095eb;
+    padding: 10px 45px 10px 45px;
+    border: 0;
+    font-size: 1em; 
+    color: 	white;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  form button:hover{
+      background-color: #046193;
+  }
+  textarea {
+      resize: none;
 }
-.formcontato__input{
-    background: var(--white);;
-    border-bottom: 1px solid #004e92;
-    padding: .75rem;
-    width: 50%;
 
-}
-.formcontato__textarea {
-    border: none;
-    background: var(--white);;
-    border-bottom: 1px solid #004e92;
-    width: 51%;
-}
-
-.formcontato__botao {
-    cursor: pointer;
-    background: #004e92;
-    border: none;
-    padding: .75rem;
-    color: var(--white);
-    margin-bottom: .75rem;
-    border: 1px solid transparent;
-    transition: 1s;
-    
-}
-
-.formcontato__botao:hover{
-    color: #0c0c0c;
-    background: transparent;
-    border: 1px solid #004e92;
-    border-radius: 1rem;
-    transition: 1s;
-}

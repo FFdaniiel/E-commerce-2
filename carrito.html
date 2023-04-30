@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Virtual</title>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="./index.html">
+                    <img class="nav-logo" src="./img/logo.png" alt="Logo">
+                </a>
+                    <h4 class="nav-name-logo">Mercado Virtual</h4>
+            </div>
+            <div class="header-nav-search">
+                <input type="text" class="nav-search-imput" placeholder="Buscar productos, marcas y más...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="header-nav-publicidad">
+                <p>Por <span>$1.200</span> ¡Suscribite! </p>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-menu-list">
+                    <li class="nav-menu-item">
+                        <a href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="./categoria.html"><i class="fa-solid fa-box"></i> Categoria</a>
+                    </li>
+                        
+                    <li class="nav-menu-item">
+                            <a href="./ofertas.html"><i class="fa-solid fa-tag"></i> Ofertas</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href= "./ayuda.html"><i class="fa-solid fa-circle-info"></i> Ayuda</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-header-plus-menu">
+                <div class="nav-headerplus-container">
+                    <a href="./carrito.html"><i class="fa-solid fa-cart-shopping fa-xl btn-carrito"></i></a>
+
+                </div>
+            </div>
+            <div class="nav-menu-tablet">
+                <i class="fa-solid fa-bars" id="open-menu"></i>
+                <i class="fa-solid fa-xmark" id="close-menu"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <h2 class="titulo-principal">Carrito</h2>
+        <div class="contenedor-carrito">
+            <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio <i class="fa-regular fa-face-sad-cry"></i></p>
+
+            <div id="carrito-productos" class="carrito-productos disabled">
+                <!-- Esto se va a completar con el JS -->
+            </div>
+            <div id="carrito-acciones" class="carrito-acciones disabled">
+                <div class="carrito-acciones-izquierda">
+                    <button class="carrito-acciones-vaciar">Vaciar carrito</button>
+                </div>
+                <div class="carrito-acciones-Derecha">
+                    <div class="carrito-acciones-total">
+                        <p>Total</p>
+                        <p id="total">$30000</p>
+                    </div>
+                    <button class="carrito-acciones-comprar">Comprar ahora</button>
+                </div>
+            </div>
+            <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra <i class="fa-regular fa-face-laugh-wink"></i></p>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <ul class="icons-footer">
+            <li icon-footer><i class="fa-brands fa-linkedin"></i></li>
+            <li icon-footer><i class="fa-brands fa-github"></i></li>
+        </ul>
+        <p class="text-footer">&#169; 2023 Daniel S. |  Ecommerce prueba</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
