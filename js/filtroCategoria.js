@@ -115,7 +115,7 @@ if(contenedorOfertas){
                     <img class="producto-img" clas src="${producto.imagen}" alt="${producto.titulo}">
                     <div class="producto-detalles">
                         <h3 class="produto-titulo">${producto.titulo}</h3>
-                        <p class="producto-precio subrayado">$ ${precio}</p>
+                        <span class="producto-precio subrayado">$ ${precio}</span>
                         <p class="producto-precio">$ ${(fixeado)} <span class="descuento">%${producto.descuento}</span></p>
                         <button class="producto-agregar" id="${producto.id}">Agregar</button>
                     </div>

@@ -125,6 +125,46 @@
         "descuento": 15,
         "precio": 309999
 
+    },
+    {
+        "id": "periferico-01",
+        "titulo": "Mouse Inalambrico Philips M344 Receptor Usb Pc",
+        "imagen": "./img/Tecnologia/perifericos/1.webp",
+        "destacado": "no",
+        "oferta": "no",
+        "categoria": {
+            "nombre": "PC de Escritorio",
+            "id": "perifericos"
+        },
+        "precio": 3499
+
+    },
+    {
+        "id": "periferico-02",
+        "titulo": "Teclado KB-125 QWERTY",
+        "imagen": "./img/Tecnologia/perifericos/2.webp",
+        "destacado": "no",
+        "oferta": "no",
+        "categoria": {
+            "nombre": "PC de Escritorio",
+            "id": "perifericos"
+        },
+        "precio": 1240
+
+    },
+    {
+        "id": "periferico-03",
+        "titulo": "Teclado Numerico Philips K106 Keypad Usb",
+        "imagen": "./img/Tecnologia/perifericos/3.webp",
+        "destacado": "si",
+        "oferta": "si",
+        "categoria": {
+            "nombre": "PC de Escritorio",
+            "id": "perifericos"
+        },
+        "descuento": 3,
+        "precio": 2297
+
     }
     
 ]

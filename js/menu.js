@@ -21,3 +21,5 @@ closeMenu.addEventListener('click' , () => {
 btnCategorias.forEach(boton => boton.addEventListener('click' , () => {
     menu.classList.remove('nav-menu-visible');
 }));
+
+

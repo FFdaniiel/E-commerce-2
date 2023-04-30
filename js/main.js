@@ -92,7 +92,7 @@ if(contenedorProductosDestacados){
                     <div class="producto-detalles">
                         <h3 class="produto-titulo">${producto.titulo}</h3>
                         <p class="producto-precio subrayado">$ ${precio}</p>
-                        <p class="producto-precio">$ ${(fixeado)} <span class="descuento">%${producto.descuento}</span></p>
+                        <p class="producto-precio">$ ${(fixeado)}<span class="descuento">%${producto.descuento}</span></p>
                         <button class="producto-agregar" id="${producto.id}">Agregar</button>
                     </div>
                 `
@@ -127,19 +127,34 @@ if (productosEnCarritoLS) {
 };
 
 function agregarAlCarrito(e) {
-
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
-    
     if(productosEnCarrito.some(producto => producto.id === idBoton)){
         const index = productosEnCarrito.findIndex(producto => producto.id == idBoton);
         productosEnCarrito[index].cantidad++;
-        
     }else {
         productoAgregado.cantidad = 1;
         productosEnCarrito.push(productoAgregado);
-
     }
+    Toastify({
+        text: `Productor añadido al carrito`,
+        duration: 3000,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "#785ce9",
+          borderRadius: "2rem",
+          textTransform: "upperCase",
+          fontSize: ".75rem",
+        },
+        offset: {
+            x: "1.5rem", // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: "1.5rem" // vertical axis - can be a number or a string indicating unity. eg: '2em'
+          },
+        onClick: function(){} // Callback after click
+      }).showToast(); 
     actualizarNumero()
 
      // Guardando los productos en carrito en localstrorage

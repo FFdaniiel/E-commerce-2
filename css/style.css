@@ -15,6 +15,10 @@
   font-family: var(--rubik);
 
 }
+img {
+  object-fit: scale-down;
+  margin: auto;
+}
 
 ul {
   list-style: none;
@@ -269,7 +273,7 @@ input {
 /* ----------------- Promo item ----------------- */
 
 .anuncio-promo {
-  padding: 1rem 0;
+  padding: 1rem ;
   background: var(--yellow);
   text-align: center;
   align-items: center;
@@ -307,46 +311,48 @@ input {
 /* ----------------- Productos----------------- */
 main {
   background: #ececec;
-  padding-bottom: 1rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 .titulo-principal {
-  padding: 2rem;
-  position: relative;
-  bottom: 1.5rem;
-  color: var(--yellow);
+  padding: 1rem;
+  margin: 0;
+  text-align: start;
+  padding-left: 3rem;
+  font-weight: 300;
+  color: var(--gray);
   background: -webkit-linear-gradient(to right, #515896, #004e92);
   background: linear-gradient(to right, #515896, #004e92); 
 }
 .container-productos {
-  align-items: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  display: flex;
   margin: 1rem;
+  align-items: center;
+  justify-content: space-between;
 }
 .producto {
   background: #fff;
-  width: 100%;
   border: 1px solid var(--gray);
   transition: 1s;
   border-bottom-left-radius:  2rem;
   border-bottom-right-radius:  2rem;
   overflow: hidden;
-  object-fit: cover;
+  width: 22vw;
+  height: 430px;
 }
 .producto:hover{
   scale: 1.04;
 }
 .producto-img {
   position: relative;
-  width: 85%;
+  width: 50%;
+  height: 200px;
 }
 .producto-detalles {
   background: #004e92;
-  position: relative;
-  padding-bottom: 1rem;
-  padding-top: .75rem;
+  padding: 1rem 0;
+  padding-bottom: 6rem;
+ 
 }
 
 .produto-titulo {
@@ -397,9 +403,9 @@ main {
 }
 .descuento{
   color: var(--green);
+  font-weight: 400;
   position: absolute;
-  right: 10rem;
-  font-weight: 700;
+  padding-left: 1rem;
 }
 
 /* ----------------- footer----------------- */
@@ -452,9 +458,6 @@ main {
   .header-logo {
     gap: 0;
   }
-  .slider-container {
-
-  }
   .slider {
     height: 300px;
   }
@@ -466,9 +469,7 @@ main {
   }
 
   /* Container promo */
-  .items-container {
 
-  }
   .promo-envio-items {
     height: auto;
   }
@@ -477,10 +478,11 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
   .producto {
-    width: auto;
-  }
+    width: 21vw;
+    height: 450px;
+}
   .producto-img {
-    width: 300px;
+    width: 150px;
   }
   .descuento{
     right: 20%;
