@@ -128,7 +128,7 @@
     },
     {
         "id": "periferico-01",
-        "titulo": "Mouse Inalambrico Philips M344 Receptor Usb Pc",
+        "titulo": "Mouse Inalambrico Usb Pc",
         "imagen": "./img/Tecnologia/perifericos/1.webp",
         "destacado": "no",
         "oferta": "no",
@@ -154,7 +154,7 @@
     },
     {
         "id": "periferico-03",
-        "titulo": "Teclado Numerico Philips K106 Keypad Usb",
+        "titulo": "Teclado Numerico Usb",
         "imagen": "./img/Tecnologia/perifericos/3.webp",
         "destacado": "si",
         "oferta": "si",

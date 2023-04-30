@@ -15,10 +15,6 @@
   font-family: var(--rubik);
 
 }
-img {
-  object-fit: scale-down;
-  margin: auto;
-}
 
 ul {
   list-style: none;
@@ -179,10 +175,11 @@ input {
   background: var(--gray);
 
 }
-.slider {
-  width: 80%;
+.slider{
+  width: 90%;
   height: 500px;
   overflow: hidden;
+  object-fit: contain;
 }
 .sliders {
   width: 350%;
