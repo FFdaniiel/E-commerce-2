@@ -133,7 +133,7 @@
         "destacado": "no",
         "oferta": "no",
         "categoria": {
-            "nombre": "PC de Escritorio",
+            "nombre": "Perifericos",
             "id": "perifericos"
         },
         "precio": 3499
@@ -146,7 +146,7 @@
         "destacado": "no",
         "oferta": "no",
         "categoria": {
-            "nombre": "PC de Escritorio",
+            "nombre": "Perifericos",
             "id": "perifericos"
         },
         "precio": 1240
@@ -159,7 +159,7 @@
         "destacado": "si",
         "oferta": "si",
         "categoria": {
-            "nombre": "PC de Escritorio",
+            "nombre": "Perifericos",
             "id": "perifericos"
         },
         "descuento": 3,
