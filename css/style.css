@@ -30,7 +30,7 @@ input {
 
 
 .disabled {
-  display: none;
+  display: none !important;
 }
 
 /* ----------------- Header ----------------- */
@@ -485,7 +485,8 @@ main {
     width: 150px;
   }
   .descuento{
-    right: 20%;
+    font-size: .75rem;
+    padding-left: .25rem;
   }
 }
 
@@ -548,11 +549,11 @@ main {
   }
   .navigation-manual {
     margin-top: -326px;
-    margin-left: 10%;
+    margin-left: 5%;
   }
   .navigation-auto {
     margin-top: 175px;
-    margin-left: 10%;
+    margin-left: 5%;
   }
   /* promo */
 
@@ -587,7 +588,8 @@ main {
     width: 100%;
   }
   .descuento{
-    right: 5%;
+    padding-left: .35rem;
+
   }
   
   /* Footer */

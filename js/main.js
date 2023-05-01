@@ -137,7 +137,7 @@ function agregarAlCarrito(e) {
         productosEnCarrito.push(productoAgregado);
     }
     Toastify({
-        text: `Productor añadido al carrito`,
+        text: `Productor añadido`,
         duration: 3000,
         close: true,
         gravity: "top", // `top` or `bottom`
@@ -151,7 +151,7 @@ function agregarAlCarrito(e) {
         },
         offset: {
             x: "1.5rem", // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: "1.5rem" // vertical axis - can be a number or a string indicating unity. eg: '2em'
+            y: ".75rem" // vertical axis - can be a number or a string indicating unity. eg: '2em'
           },
         onClick: function(){} // Callback after click
       }).showToast(); 

@@ -2,10 +2,10 @@
 let productosEnCarrito = localStorage.getItem('productos-en-carrito');
 productosEnCarrito = JSON.parse(productosEnCarrito);
 
-const contenedorCarritoVacio = document.querySelector('#carrito-vacio');
+const contenedorCarritoVacio = document.querySelector('.carrito-vacio-container');
 const contenedorCarritoProductos = document.querySelector('#carrito-productos');
 const contenedorCarritoAcciones = document.querySelector('#carrito-acciones');
-const contenedorCarritoComprado = document.querySelector('#carrito-comprado');
+const contenedorCarritoComprado = document.querySelector('.carrito-comprado-container');
 const contenedorTotal = document.querySelector('#total');
 let btnEliminar = document.querySelectorAll('.carrito-producto-eliminar');
 const btnVaciar = document.querySelector('.carrito-acciones-vaciar');
@@ -117,7 +117,7 @@ function vaciarCarrito() {
             productosEnCarrito.length = 0;
             localStorage.setItem('productos-en-carrito', JSON.stringify(productosEnCarrito));
             cargarProductosCarrito()
-            contenedorCarritoProductos.innerHTML = '';
+
 
         }
     })
