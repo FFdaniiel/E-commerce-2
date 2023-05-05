@@ -7,7 +7,6 @@ const contenedorCarritoProductos = document.querySelector('#carrito-productos');
 const contenedorCarritoAcciones = document.querySelector('#carrito-acciones');
 const contenedorCarritoComprado = document.querySelector('.carrito-comprado-container');
 const contenedorTotal = document.querySelector('#total');
-let btnEliminar = document.querySelectorAll('.carrito-producto-eliminar');
 const btnVaciar = document.querySelector('.carrito-acciones-vaciar');
 const btnComprar = document.querySelector('.carrito-acciones-comprar');
 
@@ -32,10 +31,7 @@ function cargarProductosCarrito() {
                     <small>Titulo</small>
                     <h3>${producto.titulo}</h3>
                 </div>
-                <div class="carrito-producto-cantidad">
-                    <small>Cantidad</small>
-                    <p>${producto.cantidad}</p>
-                </div>
+                
                 <div class="carrito-producto-precio">
                     <small>Precio</small>
                     <p>$${producto.precio}</p>
@@ -44,25 +40,52 @@ function cargarProductosCarrito() {
                     <small>Subtotal</small>
                     <p>$${producto.precio * producto.cantidad}</p>
                 </div>
+                <div class="carrito-producto-cantidad">
+                <small>Cantidad</small>
+                    <div class = "carrito-container-cantidad">
+                        <i class="fa-solid fa-minus resta"></i>
+                        <p class="cantidadActual" >${producto.cantidad}</p>
+                        <i id="${producto.cantidad}" class="fa-solid fa-plus sumar"></i>
+                    </div>
+                </div>
                 <button class="carrito-producto-eliminar" id="${producto.id}"><i class="fa-solid fa-trash"></i></button>
             `;
             contenedorCarritoProductos.append(div);
         });
-    
+        
     }else {
         contenedorCarritoVacio.classList.remove('disabled');
         contenedorCarritoProductos.classList.add('disabled');
         contenedorCarritoAcciones.classList.add('disabled');
         contenedorCarritoComprado.classList.add('disabled');
-    
+        
     }
+    ActualizarsumarCantidad()
     actualizarBtnEliminar()
     actualizarTotal()
 }
 cargarProductosCarrito()
 
+// ****************  
+
+function ActualizarsumarCantidad(){
+    const btnSuma = document.querySelectorAll('.sumar');
+    btnSuma.forEach(btn =>{
+        
+        btn.addEventListener('click', sumarCantidad);
+    });
+}
+
+function sumarCantidad(e){
+    const idBoton = e.currentTarget.id;
+        const index = productosEnCarrito.findIndex(producto => producto.id == idBoton);
+        productosEnCarrito[index].cantidad++;
+        localStorage.setItem('productos-en-carrito', JSON.stringify(productosEnCarrito));
+
+}
+
 function actualizarBtnEliminar() {
-    btnEliminar = document.querySelectorAll('.carrito-producto-eliminar');
+    const btnEliminar = document.querySelectorAll('.carrito-producto-eliminar');
 
     btnEliminar.forEach(boton => {
         boton.addEventListener('click', eliminarDelCarrito);
@@ -89,7 +112,7 @@ function eliminarDelCarrito(e) {
           },
         onClick: function(){} // Callback after click
       }).showToast();
-      const idBoton = e.currentTarget.id
+      const idBoton = e.currentTarget.cantidad
       const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
       productosEnCarrito.splice(index,1);
       cargarProductosCarrito()
@@ -145,3 +168,5 @@ function comprarCarrito() {
     contenedorCarritoComprado.classList.remove('disabled');
 
 }
+
+
