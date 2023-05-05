@@ -32,6 +32,10 @@ input {
 .disabled {
   display: none !important;
 }
+body{
+  min-height: 100vh;
+
+}
 
 /* ----------------- Header ----------------- */
 
@@ -406,6 +410,7 @@ main {
 
 /* ----------------- carrito----------------- */
 .contenedor-carrito {
+  height: 100%;
   display: grid;
   grid-template-columns: 3fr 1fr
 }
@@ -416,6 +421,7 @@ main {
   gap: 1rem;
 
 }
+
 .carrito-producto{
   display: flex;
   justify-content: space-between;
@@ -448,6 +454,7 @@ main {
   cursor: pointer;
 }
 .carrito-acciones{
+  height: 400px;
   display: grid;
   align-items: center;
   background-color: #fff;
@@ -496,6 +503,10 @@ main {
 /* ----------------- footer----------------- */
 
 .footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
