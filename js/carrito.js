@@ -58,7 +58,7 @@ function cargarProductosCarrito() {
         contenedorCarritoProductos.classList.add('disabled');
         contenedorCarritoAcciones.classList.add('disabled');
         contenedorCarritoComprado.classList.add('disabled');
-        
+        document.querySelector('.contenedor-carrito').style.display = 'block';
     }
     actualizarsumarCantidad()
     actualizarRestaCantidad()
@@ -205,6 +205,8 @@ function comprarCarrito() {
             contenedorCarritoProductos.classList.add('disabled');
             contenedorCarritoAcciones.classList.add('disabled');
             contenedorCarritoComprado.classList.remove('disabled');
+            document.querySelector('.contenedor-carrito').style.display = 'block';
+            
         }
     })
 

@@ -528,6 +528,7 @@ main {
   border-radius: .4rem;
 }
 
+
 /* ----------------- footer----------------- */
 
 .footer {
@@ -704,6 +705,10 @@ main {
   .header-nav-publicidad {
     display: none;
   }
+  .fa-magnifying-glass {
+    padding: 0;
+    border: none;
+  }
   /* .nav-menu {
     display: none;
    } */
@@ -711,7 +716,9 @@ main {
     font-size: .7rem;
   }
   .fa-cart-shopping {
+    position: relative;
     font-size: 1rem;
+    right: .45rem;
   }
   .nav-search-imput:placeholder-shown {
     padding-right: 5.5rem;
