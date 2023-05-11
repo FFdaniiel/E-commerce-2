@@ -10,7 +10,7 @@
             "id": "notebook"
         },
         "descuento": 25,
-        "precio": 45000
+        "precio": 45.000
     },
     {
         "id": "notebook-02",
@@ -22,7 +22,7 @@
             "nombre": "Notebook",
             "id": "notebook"
         },
-        "precio": 1999
+        "precio": 1.999
     },
     {
         "id": "notebook-03",

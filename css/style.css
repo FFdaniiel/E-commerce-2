@@ -419,13 +419,13 @@ main {
 .carrito-productos{
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  margin: 1rem;
   gap: 1rem;
-
 }
 
 .carrito-producto{
   display: flex;
+  width: 70%;
   justify-content: space-between;
   align-items: center;
   background: var(--yellow);
@@ -439,10 +439,24 @@ main {
   width: 5rem;
 }
 .carrito-producto-titulo {
-  width: 42%;
+  width: 23%;
+}
+.container-precios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .carrito-producto-cantidad {
   width: 30%;
+}
+.sin-descuento {
+  gap: 1rem;
+  margin-left: 1rem;
+}
+.sin-descuento .carrito-producto-precio {
+  grid-column: 2/3;
+}
+.sin-descuento .carrito-producto-subtotal {
+  grid-column: 3/4;
 }
 .carrito-container-cantidad {
   display: flex;
@@ -468,8 +482,8 @@ main {
   display: grid;
   align-items: center;
   background-color: #fff;
-  margin: 2rem;
-  border-radius: 2rem;
+  margin: 1rem 0;
+  padding: 1rem;
   justify-content: center;
 }
 .carrito-acciones-vaciar, .carrito-acciones-comprar{
@@ -527,7 +541,18 @@ main {
   border-color: #004e92;
   border-radius: .4rem;
 }
+.rebaja {
+  position: relative;
+}
 
+.rebaja p{
+  position: relative;
+  text-decoration: line-through;
+}
+.con-descuento {
+  font-weight: 600;
+  margin: 0 .75rem;
+}
 
 /* ----------------- footer----------------- */
 
@@ -629,6 +654,14 @@ main {
     margin: .6rem;
     font-size: 1.2rem;
   }
+  .container-precios {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+  .con-descuento {
+    color: var(--green);
+  }
+
   .carrito-producto-precio {
     grid-column: 1/2;
   }
@@ -636,11 +669,12 @@ main {
     grid-column: 2/2;
   }
   .carrito-producto-eliminar {
-    padding: .5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     color: var(--white);
+    grid-column: 1;
     background: transparent;
     border-color: var(--yellow);
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     cursor: pointer;
     transition: .6s;
   }
@@ -665,16 +699,20 @@ main {
   
   .carrito-producto-cantidad {
     display: flex;
+    grid-column: 2/2;
+    grid-row: 3/3;
     flex-direction: column;
     align-items: center;
-    place-self: center;
+  }
+  .carrito-producto-cantidad small {
+    position: absolute;
   }
   .carrito-container-cantidad{
     background: var(--yellow);
     color: #004e92;
     margin: 1rem;
   }
-
+  
 }
 
 /*fin tablet*/
@@ -854,10 +892,16 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+
   }
   .carrito-acciones{
     margin: 2rem 4rem;
   }
-
+  .sin-descuento {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
 }
 

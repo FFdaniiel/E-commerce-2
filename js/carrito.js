@@ -22,8 +22,14 @@ function cargarProductosCarrito() {
     
     
         productosEnCarrito.forEach(producto => {
-    
-            const div = document.createElement('div');
+            let descuento = producto.descuento
+            let precio = producto.precio
+            let calculo = (descuento / 100) * precio
+            let total = Number(precio - calculo)
+            let fixeado = Number(total.toFixed(2));
+            
+            if(producto.oferta == 'si'){
+                const div = document.createElement('div');
             div.classList.add('carrito-producto');
             div.innerHTML = `
                 <img class="carrito-producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
@@ -31,14 +37,19 @@ function cargarProductosCarrito() {
                     <small>Titulo</small>
                     <h3>${producto.titulo}</h3>
                 </div>
-                
-                <div class="carrito-producto-precio">
-                    <small>Precio</small>
-                    <p>$${producto.precio}</p>
-                </div>
-                <div class="carrito-producto-subtotal">
-                    <small>Subtotal</small>
-                    <p>$${producto.precio * producto.cantidad}</p>
+                <div class= "container-precios">
+                    <div class="carrito-producto-precio rebaja">
+                        <small>Antes!</small>
+                        <p>$${producto.precio}</p>
+                    </div>
+                    <div class="carrito-producto-precio con-descuento">
+                        <small>Descuento</small>
+                        <p>$${fixeado}</p>
+                    </div>
+                    <div class="carrito-producto-subtotal">
+                        <small>Subtotal</small>
+                        <p>$${fixeado * producto.cantidad}</p>
+                    </div>
                 </div>
                 <div class="carrito-producto-cantidad">
                 <small>Cantidad</small>
@@ -51,6 +62,37 @@ function cargarProductosCarrito() {
                 <button class="carrito-producto-eliminar" id="${producto.id}"><i class="fa-solid fa-trash"></i></button>
             `;
             contenedorCarritoProductos.append(div);
+            }else {
+                const div = document.createElement('div');
+                div.classList.add('carrito-producto');
+                div.innerHTML = `
+                    <img class="carrito-producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+                    <div class="carrito-producto-titulo">
+                        <small>Titulo</small>
+                        <h3>${producto.titulo}</h3>
+                    </div>
+                    <div class= "container-precios sin-descuento">
+                    <div class="carrito-producto-precio">
+                        <small>Precio</small>
+                        <p>$${producto.precio}</p>
+                    </div>
+                    <div class="carrito-producto-subtotal">
+                        <small>Subtotal</small>
+                        <p>$${producto.precio * producto.cantidad}</p>
+                    </div>
+                    </div>
+                    <div class="carrito-producto-cantidad">
+                    <small>Cantidad</small>
+                        <div class = "carrito-container-cantidad">
+                            <i id="${producto.id}" class="fa-solid fa-minus resta"></i>
+                            <p class="cantidadActual">${producto.cantidad}</p>
+                            <i id="${producto.id}" class="fa-solid fa-plus sumar"></i>
+                        </div>
+                    </div>
+                    <button class="carrito-producto-eliminar" id="${producto.id}"><i class="fa-solid fa-trash"></i></button>
+                `;
+                contenedorCarritoProductos.append(div);
+            }
         });
         
     }else {
