@@ -23,13 +23,13 @@ function cargarProductosCarrito() {
     
         productosEnCarrito.forEach(producto => {
             let descuento = producto.descuento
-            let precio = producto.precio
+            let precio = Number(producto.precio.toFixed(3))
             let calculo = (descuento / 100) * precio
-            let total = Number(precio - calculo)
+            let total = Number(precio - calculo).toFixed(3)
             let subtotal = total * producto.cantidad;
             let subtotalSin = precio * producto.cantidad;
-            let subtotalFixSin = Number(subtotalSin.toFixed(2));
-            let subtotalFix = Number(subtotal.toFixed(2));
+            let subtotalFixSin = Number(subtotalSin.toFixed(4));
+            let subtotalFix = Number(subtotal.toFixed(3));
             if(producto.oferta == 'si'){
                 const div = document.createElement('div');
             div.classList.add('carrito-producto');
@@ -42,7 +42,7 @@ function cargarProductosCarrito() {
                 <div class= "container-precios">
                     <div class="carrito-producto-precio rebaja">
                         <small>Antes!</small>
-                        <p>$${producto.precio}</p>
+                        <p>$${producto.precio.toFixed(3)}</p>
                     </div>
                     <div class="carrito-producto-precio con-descuento">
                         <small>Descuento</small>
@@ -220,7 +220,10 @@ function vaciarCarrito() {
 // Actualizar el total
 function actualizarTotal(){
     const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc +(producto.precio * producto.cantidad), 0);
-    contenedorTotal.innerText =  `$${totalCalculado}`
+    const totalCalculadodescuento = productosEnCarrito.reduce((acc, producto) => acc +(( producto.precio - ((producto.descuento / 100) * producto.precio)) * producto.cantidad), 0);
+    let numero = Number(totalCalculado.toFixed(3))
+// No toma el descuento
+        contenedorTotal.innerText =  `$${numero} `
 }
 
 // btn Comprar
