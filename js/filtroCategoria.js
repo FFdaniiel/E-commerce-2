@@ -42,7 +42,7 @@ function cargarProductos(productosElegidos) {
                 <div class="producto-detalles">
                     <h3 class="produto-titulo">${producto.titulo}</h3>
                     <p class="producto-precio subrayado">$ ${producto.precio}</p>
-                    <p class="producto-precio">$ ${(fixeado)} <span class="descuento">%${producto.descuento}</span></p>
+                    <p class="producto-precio">$ ${(fixeado.toFixed(3))} <span class="descuento">%${producto.descuento}</span></p>
                     <button class="producto-agregar" id="${producto.id}">Agregar</button>
                 </div>
             `
@@ -55,7 +55,7 @@ function cargarProductos(productosElegidos) {
                 <img class="producto-img" clas src="${producto.imagen}" alt="${producto.titulo}">
                 <div class="producto-detalles">
                     <h3 class="produto-titulo">${producto.titulo}</h3>
-                    <p class="producto-precio">$ ${producto.precio.toLocaleString('es')}</p>
+                    <p class="producto-precio">$ ${producto.precio.toFixed(3)}</p>
                     <button class="producto-agregar" id="${producto.id}">Agregar</button>
                 </div>
             `
