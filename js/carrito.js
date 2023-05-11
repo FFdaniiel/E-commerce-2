@@ -27,7 +27,8 @@ function cargarProductosCarrito() {
             let calculo = (descuento / 100) * precio
             let total = Number(precio - calculo)
             let fixeado = Number(total.toFixed(2));
-            
+            let subtotal = total * producto.cantidad;
+            let subtotalFix = Number(subtotal.toFixed(2))
             if(producto.oferta == 'si'){
                 const div = document.createElement('div');
             div.classList.add('carrito-producto');
@@ -48,7 +49,7 @@ function cargarProductosCarrito() {
                     </div>
                     <div class="carrito-producto-subtotal">
                         <small>Subtotal</small>
-                        <p>$${total * producto.cantidad}</p>
+                        <p>$${subtotalFix}</p>
                     </div>
                 </div>
                 <div class="carrito-producto-cantidad">
