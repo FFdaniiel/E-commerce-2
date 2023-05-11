@@ -552,6 +552,9 @@ main {
   font-weight: 600;
   margin: 0 .75rem;
 }
+.sin-descuento {
+  width: 29%;
+}
 
 /* ----------------- footer----------------- */
 
